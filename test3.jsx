@@ -10,6 +10,7 @@ function rakcha(props) {
     <>
 	    <h1>ray rakcha {props.jaw} fil dar ye  <sadi9 sadi9="ala" /></h1>
       <h2>yedy rahou <said ma9oula="wisdom"/></h2>
+      <jo3t/>
     </>
   );
 }
@@ -24,6 +25,14 @@ function said(props){
             <h1>7okka tonn</h1>
   )
     };
+}
+function jo3t() {
+  const solution = () => {
+    alert("ichri mekla");
+  }
+  return (
+    <button onClick={solution}>jo3t?!</button>
+  );
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<rakcha jaw="bel zebda" />);
