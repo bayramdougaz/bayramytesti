@@ -47,6 +47,30 @@ function company() {
       </ul>
     </>
   );//liste.map((objet)=><functionname objet={attribue fil liste}/> )
-}
+};
+function MyForm() {
+  return (      //form houwa form,onSubmit={function to trigger}
+    <form onSubmit={handleSubmit}>      
+      <label>chesmek?:
+        <input type="text" value='lesm' />
+      </label>
+      <label>noumrouk ye zin:
+        <input type="Number" value='tel'/>
+      </label>
+      <label>single?:
+        <input type="checkbox" />
+      </label>
+      <label>
+        <input type="radio" />
+      </label>
+        <input type="submit"/>
+    </form>
+  )
+};
+const handleSubmit = (event) => {
+  event.preventDefault();       //matkhalich il page treloadi
+  alert(`ismek houwa: ${lesm}`)     //${lesm} variable traja3ha ilform mel input value='lesm'
+  alert(`noumrouk houwa: ${tel}`)
+};
 const root = ReactDOM.createRoot(document.getElementById('root'));      //create root
 root.render(<rakcha jaw="bel zebda" />);    //render function and its the main one in our case
